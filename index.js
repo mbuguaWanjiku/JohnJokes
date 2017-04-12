@@ -1,10 +1,20 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const fs = require('fs');
+const app = express();
+const parse = require('csv-parse');
 
-app.get('/', function (req, res) {
-  res.send('Hello World!')
+fs.readFile('jokes.csv', (err, data) => {
+  parse(data, {}, (err, jokes) => {
+    app.get('/', function (req, res) {
+      let i = Math.floor((Math.random() * jokes.length));
+      let response = {
+        joke: jokes[i][0]
+      }
+      res.json(response);
+    });
+  });
 });
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+app.listen(3050, function () {
+  console.log('Example app listening on port 3050!');
 });
