@@ -1,0 +1,7 @@
+{
+  "api": {
+    "basePath": "http://localhost",
+    "port": 3050,
+    "version":"v1.0"
+  }
+}
