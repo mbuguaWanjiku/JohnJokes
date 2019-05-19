@@ -1,0 +1,14 @@
+@import 'variables';
+
+button{
+    margin: 0.5%
+}
+.hae-btn-submit{
+    background-color: $primary-color;
+}
+.hae-btn-cancel{
+    background-color: $cancel-color;
+}
+.hae-btn-delete{
+    background-color: $danger-color;
+}

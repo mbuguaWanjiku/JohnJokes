@@ -1,0 +1,11 @@
+.jokes-heading {
+  display: inline;
+  font-size: 0.8em;
+  span {
+    color: green;
+  }
+  :nth-child(2) {
+    float: right;
+    margin-right: 10%
+  }
+}
