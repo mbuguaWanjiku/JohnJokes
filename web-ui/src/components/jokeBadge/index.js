@@ -13,7 +13,7 @@ const JokeBadge = (props) => {
       return (
         <div className="jokes-badge">
           <span className="joke-message">{props.joke.punchline}</span>
-          
+          <span className="joke-type">{props.joke.type}</span>
           <Badge
             className="joke-message-mode"
             onClick={() => showJokeEditArea()}

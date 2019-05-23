@@ -24,8 +24,6 @@ const init = () => {
         db.exec(insertStatement, { punchline: item[0], type: type });
       });
       console.log("Database seeded");
-      /*let res = db.exec("SELECT * FROM tbl_jokes");
-      console.log("Error:", res);*/
     })
     .catch(err => {
       console.log("Error:", err);

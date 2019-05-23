@@ -3,7 +3,6 @@ import "./App.scss";
 import "./style/index.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Logo from "./components/Logo";
 import Home from "./containers/Home";
 
 const App = () => (

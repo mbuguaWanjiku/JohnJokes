@@ -1,11 +1,31 @@
-.jokes-heading {
-  display: inline;
-  font-size: 0.8em;
-  span {
-    color: green;
+
+.jokes-heading{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  font-size: 1em;
+  span{
+      width: 100%;
+      color: green;
   }
-  :nth-child(2) {
-    float: right;
-    margin-right: 10%
+  .punchline{
+    flex-direction: column;
+    width: 30%;
   }
+  .search{
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  .type{
+    width: 35%;
+    flex-direction: column;
+    text-align: center
+  }
+}
+.joke-new{
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
 }

@@ -28,8 +28,7 @@ body {
   @extend %commons;
   grid-column: 1/13;
   grid-row: 1/2;
-  position: absolute;
-  z-index: 1050 !important; 
+  z-index: 1050; 
   width: 100%;
 }
 
@@ -38,12 +37,14 @@ body {
   grid-column: 2/12;
   grid-row: 2/11;
   background-color:rgb(248, 247, 245);
-  position: relative
+  position: relative;
+  overflow-y: auto
 }
 
 .footer {
   grid-column: 1/13;
   grid-row: 11/13;
+  z-index: 1050; 
 }
 
 

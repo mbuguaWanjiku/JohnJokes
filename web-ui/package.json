@@ -1,5 +1,6 @@
 {
   "name": "web-ui",
+  "author": "john wanjiku",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,7 +10,9 @@
     "react-dom": "^16.8.1",
     "react-redux": "^7.0.3",
     "react-scripts": "2.1.3",
-    "reactstrap": "^7.1.0"
+    "reactstrap": "^7.1.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

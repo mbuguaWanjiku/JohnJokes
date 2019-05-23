@@ -1,25 +1,29 @@
 
 .jokes-badge{
   background-color: #FFFFFF;
-  line-height: 3em;
+  line-height: 1.8em;
   margin: 0.5% 0% 0.5% 0;
   display: flex;
   flex-direction: row;
+  font-size: 0.8em;
   span{
-    
       width: 100%;
       color: #000000;
       background-color: #ffffff;
   }
   .joke-message-mode{
-    float: right;
     text-align: center;
     width: 10%;
+    flex-direction: column;
   }
   .joke-message{
-   
     flex-wrap: wrap;
-    font-size: 0.8em;
+    flex-direction: column;
+  }
+  .joke-type{
+   width: 10%;
+   flex-direction: column;
+     
   }
 
 }

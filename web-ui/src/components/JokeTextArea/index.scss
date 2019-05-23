@@ -1,11 +1,33 @@
-.jokes-badge {
-  button {
-  width: 50%;
-  margin:0.2em;
+
+
+.jokes-editor {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8em;
+
+  textarea{
+    flex-direction: column;
+    width: 90%;
   }
-}
-.btn-toolbar{
-  flex-wrap: wrap;
+
+  .btn-toolbar {
   
- 
+    flex-direction: column;
+    
+    button {
+      font-size: 0.8em;
+      margin: 0.2em;
+    }
+  }
+  .dropdown{
+    flex-direction: column;
+    width: 20%;
+    
+  }
+
+  .joke-message-mode {
+    text-align: center;
+    width: 10%;
+    flex-direction: column;
+  }
 }

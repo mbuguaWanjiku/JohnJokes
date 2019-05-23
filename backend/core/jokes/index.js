@@ -1,12 +1,27 @@
 const jokesService = require("../../persistency/services/jokes");
 
-function getJokes(db){
-  const result = jokesService.getJokes(db);
-   if(result && (result  instanceof Array )){
-     return result;
-   }
+function getJokes() {
+  const result = jokesService.getJokes();
+  if (result && result instanceof Array) {
+    return result;
+  }
 }
 
-module.exports={
-  getJokes
+function deleteJoke(joke) {
+  return jokesService.deleteJoke(joke);
+  
 }
+function insertJoke(joke) {
+  return jokesService.insertJoke(joke);
+}
+function updateJoke(joke) {
+  return jokesService.updateJoke(joke);
+  
+}
+
+module.exports = {
+  getJokes,
+  deleteJoke,
+  insertJoke,
+  updateJoke
+};
