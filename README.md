@@ -23,5 +23,26 @@
 + npm run test for tests
 
 
-I was unable to fully test the modules due to time constraint.
 
+
+## Implementation
+
+### Backend - Is divided into three layers namely 
++ Apis - controllers or routes
+
++ core -implementation of the business logic
+
++ services - used by core to fetch data
+
++ validators - used by controllers (apis) to validate request body
+
+
+### Frontend - Is divided into three layers
+
++ services - fetch data from the api
+
++ containers 
+
++ components
+
+## I was unable to fully test the modules due to time constraint.
